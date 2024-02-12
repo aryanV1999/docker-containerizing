@@ -13,11 +13,11 @@ jobs:
       - name: Login to DockerHub
         uses: docker/login-action@v1
         with:
-          username: ${{ aryannn }}
-          password: ${{ aryan1999# }}
+          username: ${{aryannn}}
+          password: ${{aryan1999#}}
       - name: Build, tag, and push image to DockerHub
         env:
-          DOCKERHUB_USERNAME: ${{ aryannn }}
+          DOCKERHUB_USERNAME: ${{aryannn}}
           IMAGE_NAME: my-image
         run: |
           docker build -t aryannn/docker-containerizing-mlapp .
